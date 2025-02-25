@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Reports</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="https://docs.google.com/spreadsheets/d/18gi1q0yKoJKsitX6DvHPtVHLq5W-RZXHxafc_5A-qVw/edit?gid=0#gid=0/18gi1q0yKoJKsitX6DvHPtVHLq5W-RZXHxafc_5A-qVw" class="button active" target="report-frame">Daily Sales Report</a>
+        <a href="https://docs.google.com/spreadsheets/d/1FRPiu7x8KNLTzrAjPROnAKTEoJ4QgU4oLQOpJCEyGdI/edit?gid=0#gid=0/1FRPiu7x8KNLTzrAjPROnAKTEoJ4QgU4oLQOpJCEyGdI" class="button" target="report-frame">Daily Restock & Cost Report</a>
+        <a href="https://docs.google.com/spreadsheets/d/1Z3g4dwfbCzExvtdW2poO_jAl9G_PUxJYxQPv1En_nXg/edit?gid=1267745489#gid=1267745489/1Z3g4dwfbCzExvtdW2poO_jAl9G_PUxJYxQPv1En_nXg" class="button" target="report-frame">Daily Dispatched List</a>
+        <a href="https://docs.google.com/spreadsheets/d/1xnig-Kfxe_ex7bIKdX8HhLMhdWLXW6O733khxMuso08/edit?gid=0#gid=0/1xnig-Kfxe_ex7bIKdX8HhLMhdWLXW6O733khxMuso08" class="button" target="report-frame">Daily Cash Transactions</a>
+        <a href="https://docs.google.com/spreadsheets/d/1HpOdbxrxtUCp_A9STRiNbTU5KtjRCsaBocNVQSfb36c/edit?gid=0#gid=0/1HpOdbxrxtUCp_A9STRiNbTU5KtjRCsaBocNVQSfb36c" class="button" target="report-frame">Monthly Sales Report</a>
+        <a href="https://docs.google.com/spreadsheets/d/18NnfXG_Whjei6XwS8McJQYhyNI__doxrC99VgxsxzLw/edit?gid=0#gid=0/18NnfXG_Whjei6XwS8McJQYhyNI__doxrC99VgxsxzLw" class="button" target="report-frame">POS Machine Total</a>
+        <div style="margin-left: auto;">
+            <img src="logo.png" alt="Logo">
+        </div>
+    </div>
+    <div class="iframe-container">
+        <iframe name="report-frame" src="https://docs.google.com/spreadsheets/d/18gi1q0yKoJKsitX6DvHPtVHLq5W-RZXHxafc_5A-qVw/edit?gid=0#gid=0/18gi1q0yKoJKsitX6DvHPtVHLq5W-RZXHxafc_5A-qVw"></iframe>
+    </div>
+    <script>
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelectorAll('.navbar a').forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
